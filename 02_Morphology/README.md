@@ -12,13 +12,17 @@ We can print out the strings that the transducer covers, using the `hfst-fst2str
 hfst-fst2strings -X obey-flags eng.lexc.hfst 
 ```
 
-The command should give the following output: ![HFST output](./hfst-output.png)
+The command should give the following output: 
+
+![HFST output](./hfst-output.png)
 
 ## FST: 
 ```
 hfst-fst2txt eng.lexc.hfst | python3 att2dot.py  | dot -Tpng -o eng.lexc.png
 ```
-The command should give the following output: ![FST Output](./eng.lexc.png)
+The command should give the following output: 
+
+![FST Output](./eng.lexc.png)
 
 ## Graph of continuation classes
 
@@ -26,4 +30,6 @@ The command should give the following output: ![FST Output](./eng.lexc.png)
 cat eng.lexc | python3 lexc2dot.py | dot -Tpng -o eng-graph.lexc.png
 ```
 
-The command should give the following output: ![FST Graph](./eng-graph.lexc.png)
+The command should give the following output: 
+
+![FST Graph](./eng-graph.lexc.png)
